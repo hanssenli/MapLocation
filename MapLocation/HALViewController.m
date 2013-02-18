@@ -36,7 +36,7 @@
     self.locationManager.desiredAccuracy = 100;
     self.locationManager.distanceFilter = 1000;
     self.locationManager.delegate = self;
-    [self.locationManager startMonitoringSignificantLocationChanges];
+    [self.locationManager startUpdatingLocation];
     [self.mapView setCenterCoordinate:self.mapView.userLocation.coordinate animated:YES];
     MKCoordinateSpan span = MKCoordinateSpanMake(0.03, 0.03);
 
